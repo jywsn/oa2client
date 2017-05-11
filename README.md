@@ -4,7 +4,7 @@ Create an `Application` instance, making a note of the client ID and secret.
 ```
 Redirect URI = http://0.0.0.0:5000/complete/forallbackpack/
 Client type = Confidential
-Authorization grant type Authorization code
+Authorization grant type = Authorization code
 Skip authorization = CHECKED
 ```
 
