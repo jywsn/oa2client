@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sample Site: Other</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="container">
+<h3>Other Page</h3>
+<p>You are logged in as {{ user }}.</p>
+<p>Goto: <a href="/home/">Home Page</a>, <a href="http://127.0.0.1:8000">ForAllBackpack</a></p>
+
+<p>
+<form name="logoutForm" action="/disconnect/forallbackpack/" method="POST">
+{% csrf_token %}
+<a href="javascript:void(0)" onClick="document.forms['logoutForm'].submit(); return false;">Log Out</a>
+</form>
+</p>
+</div>
+
+</body>
+</html>
